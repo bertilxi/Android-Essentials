@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="folderit.net.ejemplos">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +25,10 @@
         <activity android:name=".clase1.Clase1Activity" />
         <activity android:name=".clase2.Clase2Activity" />
         <activity android:name=".clase3.Clase3Activity" />
-        <activity android:name=".clase4.Clase4Activity"></activity>
+        <activity android:name=".clase4.Clase4Activity" />
+        <activity android:name=".clase3.AnrActivity" />
+        <activity android:name=".clase3.HandlerActivity" />
+        <activity android:name=".clase3.AsyncTaskActivity"></activity>
     </application>
 
 </manifest>

@@ -10,4 +10,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="folderit.net.ejemplos.clase3.Clase3Activity">
 
+    <Button
+        android:text="ANR 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_anr1" />
+
+    <Button
+        android:text="handler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_anr1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_handler" />
+
+    <Button
+        android:text="asynctask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_handler"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_asynctask" />
 </RelativeLayout>
