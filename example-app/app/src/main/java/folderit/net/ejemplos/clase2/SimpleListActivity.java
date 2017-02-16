@@ -40,7 +40,7 @@ public class SimpleListActivity extends AppCompatActivity {
         Spinner spinner = (Spinner) findViewById(R.id.spinner); // Cliente
 
         ArrayAdapter<String> adapter = // adaptador
-                new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, colores);
+                new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, colores);
 
         spinner.setAdapter(adapter); // la interfaz objetivo esta definida en la clase padre
 
@@ -51,7 +51,7 @@ public class SimpleListActivity extends AppCompatActivity {
         final ListView mListView = (ListView) findViewById(R.id.my_list);
 
         ArrayAdapter<String> mAdapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, colores);
+                new ArrayAdapter<>(this, android.R.layout.simple_list_item_single_choice, colores);
 
         mListView.setAdapter(mAdapter);
 
@@ -84,7 +84,7 @@ public class SimpleListActivity extends AppCompatActivity {
 
         mListView.setChoiceMode(AbsListView.CHOICE_MODE_MULTIPLE);
 
-        mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_multiple_choice, colores);
+        mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_multiple_choice, colores);
 
         Button mButton = new Button(this);
 
@@ -114,7 +114,7 @@ public class SimpleListActivity extends AppCompatActivity {
 
         GridView mGridView = (GridView) findViewById(R.id.my_grid);
 
-        mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, colores);
+        mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, colores);
 
         mGridView.setAdapter(mAdapter);
 

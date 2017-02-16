@@ -33,4 +33,28 @@
         android:layout_below="@+id/button_handler"
         android:layout_centerHorizontal="true"
         android:id="@+id/button_asynctask" />
+
+    <Button
+        android:text="servicio iniciado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_asynctask"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_started_service" />
+
+    <Button
+        android:text="servicio enlazado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_started_service"
+        android:layout_alignEnd="@+id/button_started_service"
+        android:id="@+id/button_bound_service" />
+
+    <Button
+        android:text="Alarma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_bound_service"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_alarm" />
 </RelativeLayout>

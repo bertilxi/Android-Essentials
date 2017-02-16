@@ -26,6 +26,7 @@ public class AsyncTaskActivity extends AppCompatActivity {
     }
 
     private class DownloadWebPageTask extends AsyncTask<String, Void, String> {
+
         @Override
         protected String doInBackground(String... urls) {
             // we use the OkHttp library from https://github.com/square/okhttp

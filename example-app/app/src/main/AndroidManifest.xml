@@ -13,22 +13,44 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".clase1.Clase1Activity" />
         <activity android:name=".clase2.DatepickerActivity" />
         <activity android:name=".clase2.TimepickerActivity" />
         <activity android:name=".clase2.SimpleListActivity" />
         <activity android:name=".clase2.CustomListActivity" />
         <activity android:name=".clase2.RecyclerListActivity" />
-        <activity android:name=".clase1.Clase1Activity" />
         <activity android:name=".clase2.Clase2Activity" />
         <activity android:name=".clase3.Clase3Activity" />
-        <activity android:name=".clase4.Clase4Activity" />
         <activity android:name=".clase3.AnrActivity" />
         <activity android:name=".clase3.HandlerActivity" />
-        <activity android:name=".clase3.AsyncTaskActivity"></activity>
+        <activity android:name=".clase3.AsyncTaskActivity" />
+
+        <service
+            android:name=".clase3.StartedService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".clase3.BoundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".clase3.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".clase4.Clase4Activity" />
+        <activity android:name=".clase4.SQLiteActivity" />
+
+        <provider
+            android:name=".clase4.MyContentProvider"
+            android:authorities="com.folderit.net.MyProvider"
+            android:enabled="true"
+            android:exported="true" />
     </application>
+
 
 </manifest>

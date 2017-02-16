@@ -47,7 +47,7 @@ public class CustomListActivity extends AppCompatActivity {
 
     public class AppAdapter extends ArrayAdapter<App> {
 
-        LayoutInflater inflater;
+        final LayoutInflater inflater;
 
         public AppAdapter(List<App> apps) {
 
