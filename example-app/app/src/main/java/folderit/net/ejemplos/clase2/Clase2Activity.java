@@ -21,8 +21,6 @@ public class Clase2Activity extends AppCompatActivity {
         Button buttonDatePicker = (Button) findViewById(R.id.button_datepicker);
         Button buttonTimePicker = (Button) findViewById(R.id.button_timepicker);
         Button buttonListView = (Button) findViewById(R.id.listview_button);
-        Button buttonCustomListView = (Button) findViewById(R.id.button_custom_listview);
-        Button buttonRecyclerView = (Button) findViewById(R.id.button_recyclerview);
         Button buttonToast = (Button) findViewById(R.id.button_toast);
         Button buttonDialog = (Button) findViewById(R.id.button_dialog);
         Button buttonSnackBar = (Button) findViewById(R.id.button_snackbar);
@@ -48,22 +46,6 @@ public class Clase2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(v.getContext(), SimpleListActivity.class);
-                startActivity(i);
-            }
-        });
-
-        buttonCustomListView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), CustomListActivity.class);
-                startActivity(i);
-            }
-        });
-
-        buttonRecyclerView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), RecyclerListActivity.class);
                 startActivity(i);
             }
         });

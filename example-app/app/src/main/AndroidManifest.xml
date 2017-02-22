@@ -3,6 +3,8 @@
     package="folderit.net.ejemplos">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +15,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -20,37 +23,43 @@
         <activity android:name=".clase2.DatepickerActivity" />
         <activity android:name=".clase2.TimepickerActivity" />
         <activity android:name=".clase2.SimpleListActivity" />
-        <activity android:name=".clase2.CustomListActivity" />
-        <activity android:name=".clase2.RecyclerListActivity" />
+        <activity android:name=".clase3.CustomListActivity" />
+        <activity android:name=".clase3.RecyclerListActivity" />
         <activity android:name=".clase2.Clase2Activity" />
         <activity android:name=".clase3.Clase3Activity" />
-        <activity android:name=".clase3.AnrActivity" />
-        <activity android:name=".clase3.HandlerActivity" />
-        <activity android:name=".clase3.AsyncTaskActivity" />
+        <activity android:name=".clase4.AnrActivity" />
+        <activity android:name=".clase4.HandlerActivity" />
+        <activity android:name=".clase4.AsyncTaskActivity" />
 
         <service
-            android:name=".clase3.StartedService"
+            android:name=".clase5.StartedService"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name=".clase3.BoundService"
+            android:name=".clase5.BoundService"
             android:enabled="true"
             android:exported="true" />
 
         <receiver
-            android:name=".clase3.AlarmReceiver"
+            android:name=".clase5.AlarmReceiver"
             android:enabled="true"
             android:exported="true" />
 
         <activity android:name=".clase4.Clase4Activity" />
-        <activity android:name=".clase4.SQLiteActivity" />
+        <activity android:name=".clase6.SQLiteActivity" />
 
         <provider
-            android:name=".clase4.MyContentProvider"
+            android:name=".clase6.MyContentProvider"
             android:authorities="com.folderit.net.MyProvider"
             android:enabled="true"
             android:exported="true" />
-    </application>
 
+        <activity android:name=".clase5.PermisosActivity" />
+        <activity android:name=".clase4.HttpUrlConnectionClientActivity" />
+        <activity android:name=".clase4.IonClientActivity" />
+        <activity android:name=".clase4.RetrofitClientActivity" />
+        <activity android:name=".clase6.Clase6Activity" />
+        <activity android:name=".clase5.Clase5Activity"></activity>
+    </application>
 
 </manifest>

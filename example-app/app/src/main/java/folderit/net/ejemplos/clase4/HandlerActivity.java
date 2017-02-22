@@ -1,4 +1,4 @@
-package folderit.net.ejemplos.clase3;
+package folderit.net.ejemplos.clase4;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

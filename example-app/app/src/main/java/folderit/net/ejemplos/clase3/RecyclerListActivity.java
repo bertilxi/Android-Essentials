@@ -1,4 +1,4 @@
-package folderit.net.ejemplos.clase2;
+package folderit.net.ejemplos.clase3;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import folderit.net.ejemplos.R;
+import folderit.net.ejemplos.clase2.App;
 
 public class RecyclerListActivity extends AppCompatActivity {
 
@@ -62,8 +63,7 @@ public class RecyclerListActivity extends AppCompatActivity {
         @Override
         public AppViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_list_row, parent, false);
-            AppViewHolder appViewHolder = new AppViewHolder(view);
-            return appViewHolder;
+            return new AppViewHolder(view);
         }
 
         @Override

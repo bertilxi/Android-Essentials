@@ -1,4 +1,4 @@
-package folderit.net.ejemplos.clase2;
+package folderit.net.ejemplos.clase3;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import folderit.net.ejemplos.R;
+import folderit.net.ejemplos.clase2.App;
 
 public class CustomListActivity extends AppCompatActivity {
 
