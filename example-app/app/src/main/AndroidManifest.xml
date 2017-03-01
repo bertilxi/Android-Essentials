@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".clase1.Clase1Activity" />
+
         <activity android:name=".clase2.DatepickerActivity" />
         <activity android:name=".clase2.TimepickerActivity" />
         <activity android:name=".clase2.SimpleListActivity" />
@@ -59,7 +59,7 @@
         <activity android:name=".clase4.IonClientActivity" />
         <activity android:name=".clase4.RetrofitClientActivity" />
         <activity android:name=".clase6.Clase6Activity" />
-        <activity android:name=".clase5.Clase5Activity"></activity>
+        <activity android:name=".clase5.Clase5Activity" />
     </application>
 
 </manifest>

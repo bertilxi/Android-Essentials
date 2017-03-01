@@ -59,7 +59,6 @@ public class RecyclerListActivity extends AppCompatActivity {
             this.mApps = appList;
         }
 
-
         @Override
         public AppViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_list_row, parent, false);

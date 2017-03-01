@@ -23,11 +23,17 @@ public class IonClientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ion_client);
 
-
         listRepos("bertilxi").setCallback(new FutureCallback<List<GithubRepo>>() {
             @Override
             public void onCompleted(Exception e, List<GithubRepo> result) {
+
+                if(e != null){
+                    e.printStackTrace();
+                    return;
+                }
+
                 repos = result;
+
             }
         });
 

@@ -6,14 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.facebook.stetho.Stetho;
-import com.facebook.stetho.okhttp3.StethoInterceptor;
-
-import folderit.net.ejemplos.clase1.Clase1Activity;
 import folderit.net.ejemplos.clase2.Clase2Activity;
 import folderit.net.ejemplos.clase3.Clase3Activity;
 import folderit.net.ejemplos.clase4.Clase4Activity;
-import okhttp3.OkHttpClient;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,23 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Stetho.initializeWithDefaults(this);
-        new OkHttpClient.Builder()
-                .addNetworkInterceptor(new StethoInterceptor())
-                .build();
-
-        Button button_clase1 = (Button) findViewById(R.id.button_clase1);
         Button button_clase2 = (Button) findViewById(R.id.button_clase2);
         Button button_clase3 = (Button) findViewById(R.id.button_clase3);
         Button button_clase4 = (Button) findViewById(R.id.button_clase4);
-
-        button_clase1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, Clase1Activity.class);
-                startActivity(i);
-            }
-        });
 
         button_clase2.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -3,12 +3,13 @@ package folderit.net.ejemplos.clase4;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import java.io.IOException;
 import java.util.List;
 
 import folderit.net.ejemplos.R;
 import folderit.net.ejemplos.clase4.domain.GithubRepo;
 import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
@@ -28,13 +29,18 @@ public class RetrofitClientActivity extends AppCompatActivity {
 
         GitHubService service = retrofit.create(GitHubService.class);
 
-        Call<List<GithubRepo>> response = service.listRepos("bertilxi");
+        service.listRepos("bertilxi").enqueue(new Callback<List<GithubRepo>>() {
+            @Override
+            public void onResponse(Call<List<GithubRepo>> call, Response<List<GithubRepo>> response) {
 
-        try {
-            List<GithubRepo> repos = response.execute().body();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            }
+
+            @Override
+            public void onFailure(Call<List<GithubRepo>> call, Throwable t) {
+
+            }
+        });
+
 
     }
 
