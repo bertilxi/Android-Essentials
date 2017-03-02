@@ -23,40 +23,4 @@
         android:layout_height="wrap_content"
         android:text="RecyclerView" />
 
-    <Button
-        android:id="@+id/button_anr1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ANR 1" />
-
-    <Button
-        android:id="@+id/button_handler"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="handler" />
-
-    <Button
-        android:id="@+id/button_asynctask"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="asynctask" />
-
-    <Button
-        android:id="@+id/button_started_service"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="servicio iniciado" />
-
-    <Button
-        android:id="@+id/button_bound_service"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="servicio enlazado" />
-
-    <Button
-        android:id="@+id/button_alarm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Alarma" />
-
 </LinearLayout>

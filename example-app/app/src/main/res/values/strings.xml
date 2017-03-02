@@ -3,4 +3,15 @@
     <string name="titulo">Android Essentials</string>
     <string name="my_input">Como te llamas?</string>
     <string name="my_button">Clickeame!</string>
+    <string name="datepicker">DatePicker</string>
+    <string name="timepicker">TimePicker</string>
+    <string name="toast">Toast</string>
+    <string name="dialog">Dialog</string>
+    <string name="snack_bar">Snack Bar</string>
+    <string name="listview">ListView</string>
+    <string name="clase_2">clase 2</string>
+    <string name="clase_3">clase 3</string>
+    <string name="clase_4">clase 4</string>
+    <string name="clase_5">clase 5</string>
+    <string name="clase_6">clase 6</string>
 </resources>

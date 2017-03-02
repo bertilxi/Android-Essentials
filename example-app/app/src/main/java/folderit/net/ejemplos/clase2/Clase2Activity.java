@@ -18,6 +18,9 @@ public class Clase2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clase2);
+
+        // views
+
         Button buttonDatePicker = (Button) findViewById(R.id.button_datepicker);
         Button buttonTimePicker = (Button) findViewById(R.id.button_timepicker);
         Button buttonListView = (Button) findViewById(R.id.listview_button);
@@ -25,6 +28,7 @@ public class Clase2Activity extends AppCompatActivity {
         Button buttonDialog = (Button) findViewById(R.id.button_dialog);
         Button buttonSnackBar = (Button) findViewById(R.id.button_snackbar);
 
+        // listeners
 
         buttonDatePicker.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,9 +57,7 @@ public class Clase2Activity extends AppCompatActivity {
         buttonToast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Toast.makeText(v.getContext(), "Soy un Toast", Toast.LENGTH_LONG).show();
-
             }
         });
 
@@ -92,7 +94,6 @@ public class Clase2Activity extends AppCompatActivity {
         buttonSnackBar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Snackbar.make(v, "soy un Snack bar", Snackbar.LENGTH_LONG)
                         .setAction("Soy una Acción", new View.OnClickListener() {
                             @Override
@@ -101,7 +102,6 @@ public class Clase2Activity extends AppCompatActivity {
                             }
                         })
                         .show();
-
             }
         });
 

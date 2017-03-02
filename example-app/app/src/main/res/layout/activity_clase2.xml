@@ -15,37 +15,37 @@
         android:id="@+id/button_datepicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DatePicker" />
+        android:text="@string/datepicker" />
 
     <Button
         android:id="@+id/button_timepicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TimePicker" />
+        android:text="@string/timepicker" />
 
 
     <Button
         android:id="@+id/button_toast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Toast" />
+        android:text="@string/toast" />
 
     <Button
         android:id="@+id/button_dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dialog" />
+        android:text="@string/dialog" />
 
     <Button
         android:id="@+id/button_snackbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Snack Bar" />
+        android:text="@string/snack_bar" />
 
     <Button
         android:id="@+id/listview_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ListView" />
+        android:text="@string/listview" />
 
 </LinearLayout>

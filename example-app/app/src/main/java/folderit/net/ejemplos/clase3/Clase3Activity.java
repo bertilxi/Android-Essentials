@@ -10,8 +10,6 @@ import folderit.net.ejemplos.R;
 
 public class Clase3Activity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,10 +34,6 @@ public class Clase3Activity extends AppCompatActivity {
             }
         });
 
-
     }
-
-
-
 
 }

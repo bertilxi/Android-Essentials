@@ -2,33 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <ProgressBar
         android:id="@+id/progressBar1"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:indeterminate="false"
         android:max="10"
-        android:padding="25dp" >
-    </ProgressBar>
+        android:padding="25dp" />
 
     <TextView
-        android:padding="10dp"
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="" >
-    </TextView>
-    <Button
         android:padding="10dp"
-        android:id="@+id/button1"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button_handler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="startProgress"
-        android:text="Start Progress" >
-    </Button>
+        android:padding="10dp"
+        android:text="Start Progress" />
 
 </LinearLayout>

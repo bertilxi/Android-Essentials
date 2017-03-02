@@ -9,6 +9,8 @@ import android.widget.Button;
 import folderit.net.ejemplos.clase2.Clase2Activity;
 import folderit.net.ejemplos.clase3.Clase3Activity;
 import folderit.net.ejemplos.clase4.Clase4Activity;
+import folderit.net.ejemplos.clase5.Clase5Activity;
+import folderit.net.ejemplos.clase6.Clase6Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
         Button button_clase2 = (Button) findViewById(R.id.button_clase2);
         Button button_clase3 = (Button) findViewById(R.id.button_clase3);
         Button button_clase4 = (Button) findViewById(R.id.button_clase4);
+        Button button_clase5 = (Button) findViewById(R.id.button_clase5);
+        Button button_clase6 = (Button) findViewById(R.id.button_clase6);
 
         button_clase2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, Clase2Activity.class);
+                Intent i = new Intent(v.getContext(), Clase2Activity.class);
                 startActivity(i);
             }
         });
@@ -32,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         button_clase3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, Clase3Activity.class);
+                Intent i = new Intent(v.getContext(), Clase3Activity.class);
                 startActivity(i);
             }
         });
@@ -40,7 +44,23 @@ public class MainActivity extends AppCompatActivity {
         button_clase4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, Clase4Activity.class);
+                Intent i = new Intent(v.getContext(), Clase4Activity.class);
+                startActivity(i);
+            }
+        });
+
+        button_clase5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), Clase5Activity.class);
+                startActivity(i);
+            }
+        });
+
+        button_clase6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), Clase6Activity.class);
                 startActivity(i);
             }
         });

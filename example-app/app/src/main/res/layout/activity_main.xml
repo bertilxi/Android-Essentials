@@ -12,23 +12,14 @@
 
 
     <Button
-        android:text="clase 1"
+        android:text="@string/clase_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button_clase1" />
-
-    <Button
-        android:text="clase 2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_clase1"
         android:layout_centerHorizontal="true"
         android:id="@+id/button_clase2" />
 
     <Button
-        android:text="clase 3"
+        android:text="@string/clase_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_clase2"
@@ -36,10 +27,26 @@
         android:id="@+id/button_clase3" />
 
     <Button
-        android:text="clase 4"
+        android:text="@string/clase_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_clase3"
         android:layout_centerHorizontal="true"
         android:id="@+id/button_clase4" />
+
+    <Button
+        android:text="@string/clase_5"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_clase4"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_clase5"
+        android:layout_width="match_parent" />
+
+    <Button
+        android:text="@string/clase_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_clase6"
+        android:layout_below="@+id/button_clase5"
+        android:layout_alignStart="@+id/button_clase5" />
 </RelativeLayout>

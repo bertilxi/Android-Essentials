@@ -1,4 +1,4 @@
-package folderit.net.ejemplos.clase2;
+package folderit.net.ejemplos.clase3.domain;
 
 public class App {
 

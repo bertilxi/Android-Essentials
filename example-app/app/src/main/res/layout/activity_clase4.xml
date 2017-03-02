@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_clase4"
     android:layout_width="match_parent"
@@ -8,45 +8,43 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="folderit.net.ejemplos.clase4.Clase4Activity">
+    tools:context="folderit.net.ejemplos.clase4.Clase4Activity"
+    android:orientation="vertical">
 
     <Button
-        android:text="pedir permiso"
+        android:id="@+id/button_anr1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button_ask_permssion" />
+        android:text="ANR 1" />
 
     <Button
-        android:text="SQLITE"
+        android:id="@+id/button_handler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_ask_permssion"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button_sqlite" />
+        android:text="handler" />
+
+    <Button
+        android:id="@+id/button_asynctask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asynctask" />
 
     <Button
         android:text="Cliente HttpURLConnection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_sqlite"
-        android:layout_centerHorizontal="true"
         android:id="@+id/button_httpurlconnection" />
 
     <Button
         android:text="cliente ion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_httpurlconnection"
-        android:layout_centerHorizontal="true"
         android:id="@+id/button_ion" />
 
     <Button
         android:text="cliente retrofit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_ion"
-        android:layout_centerHorizontal="true"
         android:id="@+id/button_retrofit" />
-</RelativeLayout>
+
+</LinearLayout>

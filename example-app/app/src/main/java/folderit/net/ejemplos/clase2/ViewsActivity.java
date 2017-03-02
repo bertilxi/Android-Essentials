@@ -27,7 +27,7 @@ public class ViewsActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.UI2);
+        setContentView(R.layout.ui2);
 
         //
         // Button
@@ -149,7 +149,6 @@ public class ViewsActivity extends Activity {
         mDatePicker.setMaxDate(0);
 
         mDatePicker.getDayOfMonth();
-        mDatePicker.getFirstDayOfWeek();
         mDatePicker.getMonth();
         mDatePicker.getYear();
 
