@@ -44,81 +44,15 @@ public class RecyclerListActivity extends AppCompatActivity {
 
     private void initData() {
         apps = new ArrayList<>();
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
-        apps.add(new App().setName("Chrome").setVersion("51").setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
-        apps.add(new App().setName("Firefox").setVersion("45").setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
-        apps.add(new App().setName("Edge").setVersion("12").setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
-        apps.add(new App().setName("Opera").setVersion("41.9").setRating(3).setDescription("Navegador").setDeveloper("Opera"));
-        apps.add(new App().setName("Safari").setVersion("11").setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
+
+        for (int i = 0; i < 10000; i++) {
+            apps.add(new App().setName("Chrome").setVersion("51." + i).setRating(4.5f).setDescription("Navegador").setDeveloper("Google"));
+            apps.add(new App().setName("Firefox").setVersion("45." + i).setRating(4.3f).setDescription("Navegador").setDeveloper("Mozilla"));
+            apps.add(new App().setName("Edge").setVersion("12." + i).setRating(2.5f).setDescription("Navegador").setDeveloper("Microsoft"));
+            apps.add(new App().setName("Opera").setVersion("41.9." + i).setRating(3).setDescription("Navegador").setDeveloper("Opera"));
+            apps.add(new App().setName("Safari").setVersion("11." + i).setRating(3.2f).setDescription("Navegador").setDeveloper("Apple"));
+        }
+
     }
 
     class AppRecyclerAdapter extends RecyclerView.Adapter<AppRecyclerAdapter.AppViewHolder> {

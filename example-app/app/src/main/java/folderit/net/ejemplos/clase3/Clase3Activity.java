@@ -15,8 +15,17 @@ public class Clase3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clase3);
 
+        Button buttonInefficientList = (Button) findViewById(R.id.button_inefficient_listview);
         Button buttonCustomListView = (Button) findViewById(R.id.button_custom_listview);
         Button buttonRecyclerView = (Button) findViewById(R.id.button_recyclerview);
+
+        buttonInefficientList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), InefficientListActivity.class);
+                startActivity(i);
+            }
+        });
 
         buttonCustomListView.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -2,6 +2,8 @@ package folderit.net.ejemplos.clase4;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.google.gson.reflect.TypeToken;
 import com.koushikdutta.async.future.FutureCallback;
@@ -17,11 +19,14 @@ import folderit.net.ejemplos.clase4.domain.GithubRepo;
 public class IonClientActivity extends AppCompatActivity {
 
     private List<GithubRepo> repos = new ArrayList<>();
+    private ListView mListVIew;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ion_client);
+
+        mListVIew = (ListView) findViewById(R.id.ion_listview);
 
         listRepos("bertilxi").setCallback(new FutureCallback<List<GithubRepo>>() {
             @Override
@@ -33,6 +38,16 @@ public class IonClientActivity extends AppCompatActivity {
                 }
 
                 repos = result;
+                List<String> mList = new ArrayList<String>();
+
+                for(GithubRepo r : repos){
+                    mList.add(r.getName());
+                }
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(IonClientActivity.this,
+                        android.R.layout.simple_list_item_1, mList);
+
+                mListVIew.setAdapter(adapter);
 
             }
         });
@@ -40,8 +55,9 @@ public class IonClientActivity extends AppCompatActivity {
     }
 
     public ResponseFuture<List<GithubRepo>> listRepos(String user) {
+        String url = "https://api.github.com/users/" + user + "/repos";
         return Ion.with(IonClientActivity.this)
-                .load("https://api.github.com/users/" + user + "/repos")
+                .load(url)
                 .as(new TypeToken<List<GithubRepo>>() {});
     }
 

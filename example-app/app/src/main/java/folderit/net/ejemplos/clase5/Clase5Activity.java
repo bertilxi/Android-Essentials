@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import folderit.net.ejemplos.R;
-import folderit.net.ejemplos.clase6.SQLiteActivity;
 
 public class Clase5Activity extends AppCompatActivity {
 
@@ -53,7 +52,7 @@ public class Clase5Activity extends AppCompatActivity {
         Button buttonBoundService = (Button) findViewById(R.id.button_bound_service);
         Button buttonAlarm = (Button) findViewById(R.id.button_alarm);
         Button buttonAskPermission = (Button) findViewById(R.id.button_ask_permssion);
-        Button buttonSqlite = (Button) findViewById(R.id.button_sqlite);
+
 
         buttonStartedService.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,13 +81,6 @@ public class Clase5Activity extends AppCompatActivity {
             }
         });
 
-        buttonSqlite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), SQLiteActivity.class);
-                startActivity(i);
-            }
-        });
 
         buttonAlarm.setOnClickListener(new View.OnClickListener() {
             @Override

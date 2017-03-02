@@ -48,10 +48,17 @@ public class HandlerActivity extends AppCompatActivity {
 
                         @Override
                         public void run() {
-                            mText.setText("Updating");
                             mProgress.setProgress(value);
                         }
 
+                    });
+
+                    final int j = i;
+                    mText.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            mText.setText("Updating "+ j);
+                        }
                     });
                 }
 

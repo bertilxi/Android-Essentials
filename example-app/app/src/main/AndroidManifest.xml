@@ -19,7 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".clase2.DatepickerActivity" />
         <activity android:name=".clase2.TimepickerActivity" />
         <activity android:name=".clase2.SimpleListActivity" />
@@ -60,6 +59,7 @@
         <activity android:name=".clase4.RetrofitClientActivity" />
         <activity android:name=".clase6.Clase6Activity" />
         <activity android:name=".clase5.Clase5Activity" />
+        <activity android:name=".clase3.InefficientListActivity"></activity>
     </application>
 
 </manifest>

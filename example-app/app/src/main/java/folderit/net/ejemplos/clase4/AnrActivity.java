@@ -11,6 +11,7 @@ import folderit.net.ejemplos.R;
 public class AnrActivity extends AppCompatActivity {
 
     TextView mTextView;
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,46 +21,49 @@ public class AnrActivity extends AppCompatActivity {
         final TextView mTextView = (TextView) findViewById(R.id.textView_anr);
         Button mButton = (Button) findViewById(R.id.button_exec_anr);
 
+        final boolean conHilos = true;
+
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                // con un hilo
-                // new MyThread().start();
+                if (conHilos) {
+                    // con un hilo
 
-                // sin hilos
-                int i = 0;
-                while (true) {
-                    try {
+                    Runnable runnable = new Runnable() {
+                        @Override
+                        public void run() {
+                            while (true) {
+
+                                mTextView.setText("Hola me voy " + i++);
+
+                                /*
+                                mTextView.post(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        mTextView.setText("Hola me voy " + i++);
+                                    }
+                                });
+                                */
+
+                            }
+                        }
+                    };
+
+                    // asi evitariamos el ANR, pero no cumplimos con
+                    // no tocar el UI Thread desde otros hilos
+                    new Thread(runnable).start();
+
+                } else {
+                    // sin hilos
+                    i = 0;
+                    while (true) {
                         mTextView.setText("Hola me voy " + i++);
-                    } catch (Exception e) {
-                        e.printStackTrace();
                     }
                 }
-
 
             }
         });
 
     }
-
-    // asi evitariamos el ANR, pero no cumplimos con no tocar el UI Thread desde otros hilos
-
-    class MyThread extends Thread {
-
-        @Override
-        public void run() {
-            int i = 0;
-            while (true) {
-                try {
-                    mTextView.setText("Hola me voy " + i++);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-
-        }
-    }
-
-
 }

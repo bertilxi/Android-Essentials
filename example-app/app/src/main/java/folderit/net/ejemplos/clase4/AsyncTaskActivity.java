@@ -4,6 +4,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -16,6 +17,7 @@ import okhttp3.Response;
 public class AsyncTaskActivity extends AppCompatActivity {
 
     private TextView textView;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,24 +25,35 @@ public class AsyncTaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_async_task);
 
         textView = (TextView) findViewById(R.id.TextView01);
+        button = (Button) findViewById(R.id.readWebpage);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DownloadWebPageTask task = new DownloadWebPageTask();
+                task.execute(new String[]{"http://folderit.net/"});
+            }
+        });
     }
 
     private class DownloadWebPageTask extends AsyncTask<String, Void, String> {
 
         @Override
         protected String doInBackground(String... urls) {
+
             // we use the OkHttp library from https://github.com/square/okhttp
+
             OkHttpClient client = new OkHttpClient();
-            Request request =
-                    new Request.Builder()
-                            .url(urls[0])
-                            .build();
+            Request request = new Request.Builder().url(urls[0]).build();
+
             Response response = null;
+
             try {
                 response = client.newCall(request).execute();
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
             if (response.isSuccessful()) {
                 try {
                     return response.body().string();
@@ -48,19 +61,15 @@ public class AsyncTaskActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
+
             return "Download failed";
+
         }
 
         @Override
         protected void onPostExecute(String result) {
             textView.setText(result);
         }
-
-    }
-
-    public void onClick(View view) {
-        DownloadWebPageTask task = new DownloadWebPageTask();
-        task.execute(new String[] { "http://folderit.net/" });
 
     }
 

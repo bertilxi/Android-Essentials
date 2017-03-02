@@ -26,7 +26,9 @@ public class SimpleListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ArrayList<String> colores = new ArrayList<>(); // Adaptado
+        // Adaptado
+
+        ArrayList<String> colores = new ArrayList<>();
         colores.add("Rojo");
         colores.add("Azul");
         colores.add("Verde");
@@ -37,9 +39,12 @@ public class SimpleListActivity extends AppCompatActivity {
         // Spinner
         //
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner); // Cliente
 
-        ArrayAdapter<String> adapter = // adaptador
+        // Cliente
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+
+        // adaptador
+        ArrayAdapter<String> adapter =
                 new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, colores);
 
         spinner.setAdapter(adapter); // la interfaz objetivo esta definida en la clase padre

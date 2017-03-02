@@ -12,6 +12,12 @@
     tools:context="folderit.net.ejemplos.clase3.Clase3Activity">
 
     <Button
+        android:text="ListView ineficiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_inefficient_listview" />
+
+    <Button
         android:id="@+id/button_custom_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
