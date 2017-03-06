@@ -27,7 +27,7 @@ public class ViewsActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ui2);
+        setContentView(R.layout.ui1);
 
         //
         // Button
@@ -237,9 +237,6 @@ public class ViewsActivity extends Activity {
 
             }
         });
-
-
-
 
     }
 

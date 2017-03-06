@@ -59,7 +59,8 @@
         <activity android:name=".clase4.RetrofitClientActivity" />
         <activity android:name=".clase6.Clase6Activity" />
         <activity android:name=".clase5.Clase5Activity" />
-        <activity android:name=".clase3.InefficientListActivity"></activity>
+        <activity android:name=".clase3.InefficientListActivity" />
+        <activity android:name=".clase3.ExampleFormActivity"></activity>
     </application>
 
 </manifest>

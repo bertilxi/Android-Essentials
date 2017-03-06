@@ -26,13 +26,17 @@ public class PermisosActivity extends AppCompatActivity {
     }
 
 
-    public void askForContactPermission() {
+    public void askForContactPermission2() {
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+
             if (ContextCompat.checkSelfPermission(PermisosActivity.this,
                     Manifest.permission.READ_CONTACTS)
                     != PackageManager.PERMISSION_GRANTED) {
+
                 if (ActivityCompat.shouldShowRequestPermissionRationale(PermisosActivity.this,
                         Manifest.permission.CALL_PHONE)) {
+
                     AlertDialog.Builder builder = new AlertDialog.Builder(PermisosActivity.this);
                     builder.setTitle("Leer Contactos!!!");
                     builder.setPositiveButton(android.R.string.ok, null);
@@ -45,40 +49,91 @@ public class PermisosActivity extends AppCompatActivity {
                                     , PERMISSION_REQUEST_CONTACT);
                         }
                     });
+
                     builder.show();
+
                 } else {
                     ActivityCompat.requestPermissions(PermisosActivity.this,
                             new String[]{Manifest.permission.READ_CONTACTS}, PERMISSION_REQUEST_CONTACT);
                 }
             } else {
 
-// ya tenia el permiso no lo tuve que pedir
-                load();
+                // ya tenia el permiso no lo tuve que pedir
+                haganAlgo();
             }
         } else {
             // la versión alcanza con tenerlo declarado
-            load();
+            haganAlgo();
         }
+    }
+
+    public void askForContactPermission() {
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+            // la versión alcanza con tenerlo declarado
+            haganAlgo();
+            return;
+        }
+
+        if (ContextCompat.checkSelfPermission(PermisosActivity.this,
+                Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
+            // ya tenia el permiso no lo tuve que pedir
+            haganAlgo();
+            return;
+        }
+
+        if (ActivityCompat.shouldShowRequestPermissionRationale(PermisosActivity.this,
+                Manifest.permission.CALL_PHONE)) {
+
+            // tengo que pedir de buena manera el permiso explicando su criticidad
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(PermisosActivity.this);
+            builder.setTitle("Leer Contactos!!!");
+            builder.setPositiveButton(android.R.string.ok, null);
+            builder.setMessage("Puedo acceder a tus contactos???");
+            builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                @TargetApi(Build.VERSION_CODES.M)
+                @Override
+                public void onDismiss(DialogInterface dialog) {
+                    requestPermissions(new String[]{Manifest.permission.READ_CONTACTS}
+                            , PERMISSION_REQUEST_CONTACT);
+                }
+            });
+
+            builder.show();
+            return;
+        }
+
+        // lo pide el sistema con dialogo por defecto sin la explicacion elegante
+        ActivityCompat.requestPermissions(PermisosActivity.this,
+                new String[]{Manifest.permission.READ_CONTACTS}, PERMISSION_REQUEST_CONTACT);
+
+
     }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+
         switch (requestCode) {
+
             case PermisosActivity.PERMISSION_REQUEST_CONTACT: {
+
                 // si el request es cancelado el arreglo es vacio.
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     // tengo el permiso!!!.
-                    load();
+                    haganAlgo();
                 } else {
                     // no tenemos permisos
                     Toast.makeText(PermisosActivity.this, "No Permiso", Toast.LENGTH_SHORT).show();
                 }
+
                 return;
+
             }
         }
     }
 
-    private void load() {
+    private void haganAlgo() {
 
     }
 

@@ -24,9 +24,27 @@
         android:text="Custom ListView" />
 
     <Button
+        android:id="@+id/button_save_instance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Instancia" />
+
+    <Button
         android:id="@+id/button_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RecyclerView" />
+
+    <Button
+        android:text="Intent implicito 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_intent1" />
+
+    <Button
+        android:text="Intent implicito 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_intent2" />
 
 </LinearLayout>

@@ -21,7 +21,7 @@ public class AnrActivity extends AppCompatActivity {
         final TextView mTextView = (TextView) findViewById(R.id.textView_anr);
         Button mButton = (Button) findViewById(R.id.button_exec_anr);
 
-        final boolean conHilos = true;
+        final boolean conHilos = false;
 
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
