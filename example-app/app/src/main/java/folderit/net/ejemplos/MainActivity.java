@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import folderit.net.ejemplos.clase2.Clase2Activity;
 import folderit.net.ejemplos.clase3.Clase3Activity;
@@ -64,6 +65,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+        //
+        // Respuesta para Martin sobre agregar views programaticamente
+        //
+
+        LinearLayout myLayout = (LinearLayout) findViewById(R.id.activity_main);
+
+        Button mButton = new Button(this);
+
+        mButton.setText("Me agregaron a mano");
+
+        mButton.setLayoutParams(new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT));
+
+        myLayout.addView(mButton);
 
 
     }

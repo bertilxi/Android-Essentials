@@ -1,6 +1,8 @@
 package folderit.net.ejemplos.clase2;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -22,6 +24,7 @@ import android.widget.ToggleButton;
 import folderit.net.ejemplos.R;
 
 public class ViewsActivity extends Activity {
+
     @Override
     // la actividad esta siendo creada
     public void onCreate(Bundle savedInstanceState) {
@@ -162,6 +165,7 @@ public class ViewsActivity extends Activity {
         TimePicker mTimePicker = new TimePicker(this);
 
         mTimePicker.getBaseline();
+
         mTimePicker.getHour();
         mTimePicker.getMinute();
         mTimePicker.setHour(0);
@@ -239,6 +243,8 @@ public class ViewsActivity extends Activity {
         });
 
     }
+
+
 
     @Override
     protected void onStart() { // la actividad esta por mostrarse
