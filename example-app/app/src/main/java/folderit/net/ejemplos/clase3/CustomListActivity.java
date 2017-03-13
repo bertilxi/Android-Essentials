@@ -95,6 +95,7 @@ public class CustomListActivity extends AppCompatActivity {
 
             AppHolder holder = (AppHolder) row.getTag();
             RatingBar.OnRatingBarChangeListener listener = null;
+
             if (holder == null) {
                 holder = new AppHolder(row);
                 row.setTag(holder);
