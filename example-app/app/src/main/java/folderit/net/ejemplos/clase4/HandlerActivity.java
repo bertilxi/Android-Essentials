@@ -14,6 +14,7 @@ public class HandlerActivity extends AppCompatActivity {
     private ProgressBar mProgress;
     private TextView mText;
     private Button mButton;
+    private int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +40,7 @@ public class HandlerActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                for (int i = 0; i <= 10; i++) {
-                    final int value = i;
+                for (; i <= 10; i++) {
 
                     hacemosAlgo();
 
@@ -48,16 +48,15 @@ public class HandlerActivity extends AppCompatActivity {
 
                         @Override
                         public void run() {
-                            mProgress.setProgress(value);
+                            mProgress.setProgress(i);
                         }
 
                     });
 
-                    final int j = i;
                     mText.post(new Runnable() {
                         @Override
                         public void run() {
-                            mText.setText("Updating " + j);
+                            mText.setText("Updating " + i);
                         }
                     });
                 }

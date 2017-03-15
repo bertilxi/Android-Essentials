@@ -61,7 +61,6 @@ public class RetrofitClientActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     public interface GitHubService {

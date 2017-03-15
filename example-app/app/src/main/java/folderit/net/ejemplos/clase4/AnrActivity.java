@@ -11,6 +11,7 @@ import folderit.net.ejemplos.R;
 public class AnrActivity extends AppCompatActivity {
 
     private TextView mTextView;
+    private Button mButton;
     private int i = 0;
 
     @Override
@@ -18,8 +19,8 @@ public class AnrActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anr1);
 
-        final TextView mTextView = (TextView) findViewById(R.id.textView_anr);
-        Button mButton = (Button) findViewById(R.id.button_exec_anr);
+        mTextView = (TextView) findViewById(R.id.textView_anr);
+        mButton = (Button) findViewById(R.id.button_exec_anr);
 
         final boolean conHilos = false;
 
