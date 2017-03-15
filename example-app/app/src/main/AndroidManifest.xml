@@ -60,7 +60,8 @@
         <activity android:name=".clase6.Clase6Activity" />
         <activity android:name=".clase5.Clase5Activity" />
         <activity android:name=".clase3.InefficientListActivity" />
-        <activity android:name=".clase3.ExampleFormActivity"></activity>
+        <activity android:name=".clase3.ExampleFormActivity" />
+        <activity android:name=".clase3.StartForResultActivity" />
     </application>
 
 </manifest>

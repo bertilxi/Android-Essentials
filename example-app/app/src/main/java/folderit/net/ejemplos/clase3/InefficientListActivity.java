@@ -1,8 +1,8 @@
 package folderit.net.ejemplos.clase3;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -82,13 +82,13 @@ public class InefficientListActivity extends AppCompatActivity {
             textViewDescription = (TextView) row.findViewById(R.id.textView_description);
             ratingBar = (RatingBar) row.findViewById(R.id.app_ratingBar);
 
-                ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-                    @Override
-                    public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                        Integer myPosition = (Integer) ratingBar.getTag();
-                        getItem(myPosition).setRating(rating);
-                    }
-                });
+            ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+                @Override
+                public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+                    Integer myPosition = (Integer) ratingBar.getTag();
+                    getItem(myPosition).setRating(rating);
+                }
+            });
 
             ratingBar.setTag(position);
             ratingBar.setRating(this.getItem(position).getRating());

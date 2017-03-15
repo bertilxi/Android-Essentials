@@ -12,10 +12,10 @@
     tools:context="folderit.net.ejemplos.clase3.Clase3Activity">
 
     <Button
-        android:text="ListView ineficiente"
+        android:id="@+id/button_inefficient_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_inefficient_listview" />
+        android:text="ListView ineficiente" />
 
     <Button
         android:id="@+id/button_custom_listview"
@@ -36,15 +36,21 @@
         android:text="RecyclerView" />
 
     <Button
-        android:text="Intent implicito 1"
+        android:id="@+id/button_intent1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_intent1" />
+        android:text="Intent implicito 1" />
 
     <Button
-        android:text="Intent implicito 2"
+        android:id="@+id/button_intent2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_intent2" />
+        android:text="Intent implicito 2" />
+
+    <Button
+        android:id="@+id/button_activity_for_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activy For Result" />
 
 </LinearLayout>

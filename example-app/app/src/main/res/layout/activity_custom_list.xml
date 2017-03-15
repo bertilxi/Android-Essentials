@@ -11,9 +11,9 @@
     tools:context="folderit.net.ejemplos.clase3.CustomListActivity">
 
     <ListView
+        android:id="@+id/custom_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/custom_list"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

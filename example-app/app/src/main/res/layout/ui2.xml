@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="10dp"
     android:weightSum="1">
 
     <CheckBox
-        android:text="CheckBox"
+        android:id="@+id/checkBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox" />
+        android:text="CheckBox" />
 
     <RadioButton
-        android:text="RadioButton"
+        android:id="@+id/radioButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/radioButton" />
+        android:text="RadioButton" />
 
     <TextView
-        android:text="Radio Group"
-        android:paddingTop="15dp"
+        android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView6" />
+        android:paddingTop="15dp"
+        android:text="Radio Group" />
 
     <RadioGroup
-        android:orientation="vertical"
-        android:layout_width="match_parent"
         android:id="@+id/m_radiogroup"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <RadioButton
-            android:text="RadioButton"
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
 
         <RadioButton
-            android:text="RadioButton"
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="true" />
+            android:checked="true"
+            android:text="RadioButton" />
 
         <RadioButton
-            android:text="RadioButton"
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="false" />
+            android:checked="false"
+            android:text="RadioButton" />
 
     </RadioGroup>
-
 
 
 </LinearLayout>

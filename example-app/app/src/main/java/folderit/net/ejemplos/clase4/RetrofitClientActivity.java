@@ -45,7 +45,7 @@ public class RetrofitClientActivity extends AppCompatActivity {
                 repos = response.body();
                 List<String> mList = new ArrayList<String>();
 
-                for(GithubRepo r : repos){
+                for (GithubRepo r : repos) {
                     mList.add(r.getName());
                 }
 

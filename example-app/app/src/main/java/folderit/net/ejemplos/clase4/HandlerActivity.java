@@ -57,7 +57,7 @@ public class HandlerActivity extends AppCompatActivity {
                     mText.post(new Runnable() {
                         @Override
                         public void run() {
-                            mText.setText("Updating "+ j);
+                            mText.setText("Updating " + j);
                         }
                     });
                 }

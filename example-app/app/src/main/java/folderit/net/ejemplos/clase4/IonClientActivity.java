@@ -32,7 +32,7 @@ public class IonClientActivity extends AppCompatActivity {
             @Override
             public void onCompleted(Exception e, List<GithubRepo> result) {
 
-                if(e != null){
+                if (e != null) {
                     e.printStackTrace();
                     return;
                 }
@@ -40,7 +40,7 @@ public class IonClientActivity extends AppCompatActivity {
                 repos = result;
                 List<String> mList = new ArrayList<String>();
 
-                for(GithubRepo r : repos){
+                for (GithubRepo r : repos) {
                     mList.add(r.getName());
                 }
 
@@ -58,7 +58,8 @@ public class IonClientActivity extends AppCompatActivity {
         String url = "https://api.github.com/users/" + user + "/repos";
         return Ion.with(IonClientActivity.this)
                 .load(url)
-                .as(new TypeToken<List<GithubRepo>>() {});
+                .as(new TypeToken<List<GithubRepo>>() {
+                });
     }
 
 }

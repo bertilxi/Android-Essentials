@@ -2,64 +2,64 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="64dp"
-    android:padding="6dip" >
+    android:padding="6dip">
 
     <ImageView
         android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="6dip"
-        android:src="@mipmap/ic_launcher"
-        android:layout_alignParentBottom="true" />
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
-        android:text="Aplicacion"
+        android:id="@+id/textView_appname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/icon"
-        android:id="@+id/textView_appname"
-        android:textStyle="normal|bold"
+        android:text="Aplicacion"
+        android:textColor="@android:color/primary_text_light"
         android:textSize="14sp"
-        android:textColor="@android:color/primary_text_light" />
+        android:textStyle="normal|bold" />
 
     <TextView
-        android:text="Version"
-        android:layout_marginStart="10dp"
+        android:id="@+id/textView_version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
         android:layout_toEndOf="@+id/textView_appname"
-        android:id="@+id/textView_version"
-        android:textStyle="normal|bold"
-        android:textSize="14sp" />
+        android:text="Version"
+        android:textSize="14sp"
+        android:textStyle="normal|bold" />
 
     <TextView
-        android:text="Desarrollador"
+        android:id="@+id/textView_developer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView_developer"
         android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/icon" />
+        android:layout_toEndOf="@+id/icon"
+        android:text="Desarrollador" />
 
     <TextView
-        android:text="Descripcion"
+        android:id="@+id/textView_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/icon"
-        android:id="@+id/textView_description" />
+        android:text="Descripcion" />
 
     <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:numStars="6"
-        android:stepSize="0.1"
         android:id="@+id/app_ratingBar"
         style="@android:style/Widget.Material.RatingBar.Small"
-        android:layout_below="@+id/textView_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:rating="3.5" />
+        android:layout_below="@+id/textView_version"
+        android:numStars="6"
+        android:rating="3.5"
+        android:stepSize="0.1" />
 
 </RelativeLayout>

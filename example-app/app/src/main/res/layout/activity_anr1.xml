@@ -11,23 +11,23 @@
     tools:context="folderit.net.ejemplos.clase4.AnrActivity">
 
     <TextView
-        android:text="Hola Mundo"
+        android:id="@+id/textView_anr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
-        android:id="@+id/textView_anr"
-        android:textSize="24sp"
-        android:textColor="@android:color/primary_text_light" />
+        android:text="Hola Mundo"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="24sp" />
 
     <Button
-        android:text="Hace CLIck!"
+        android:id="@+id/button_exec_anr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:id="@+id/button_exec_anr"
-        android:textSize="14sp"
         android:layout_below="@+id/textView_anr"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Hace CLIck!"
+        android:textSize="14sp" />
 </RelativeLayout>
