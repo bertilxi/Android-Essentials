@@ -28,9 +28,7 @@ public class RetrofitClientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrofit_client);
 
-
         mListView = (ListView) findViewById(R.id.retrofit_listview);
-
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.github.com")
