@@ -10,8 +10,8 @@ import folderit.net.ejemplos.R;
 
 public class AnrActivity extends AppCompatActivity {
 
-    TextView mTextView;
-    int i = 0;
+    private TextView mTextView;
+    private int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,20 +33,20 @@ public class AnrActivity extends AppCompatActivity {
                     Runnable runnable = new Runnable() {
                         @Override
                         public void run() {
+
                             while (true) {
-
                                 mTextView.setText("Hola me voy " + i++);
+                            }
 
-                                /*
+/*                            for (; i < 10000; i++) {
                                 mTextView.post(new Runnable() {
                                     @Override
                                     public void run() {
                                         mTextView.setText("Hola me voy " + i++);
                                     }
                                 });
-                                */
+                            }*/
 
-                            }
                         }
                     };
 

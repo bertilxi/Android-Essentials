@@ -34,6 +34,7 @@ public class Clase3Activity extends AppCompatActivity {
         Bundle mData = data.getExtras();
         String result = (String) mData.get("result");
         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
+
     }
 
     @Override
